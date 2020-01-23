@@ -15,8 +15,3 @@ Resources:
       Code:
         S3Bucket: git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4
         S3Key: master/test-pipeline.zip
-  version:
-    Type: AWS::Lambda::Version
-    Properties: 
-      FunctionName: !Ref HelloWorldFunction
-      Description: v1
