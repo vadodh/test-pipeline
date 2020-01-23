@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:
   HelloWorldFunction:
-    Type: AWS::Lambda::Function
+    Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
       Runtime: nodejs12.x
@@ -12,6 +12,4 @@ Resources:
           Properties:
             Path: /
             Method: GET
-      Code:
-        S3Bucket: git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4
-        S3Key: master/test-pipeline.zip
+      CodeUri: s3://git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4/master/test-pipeline.zip
