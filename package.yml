@@ -12,4 +12,4 @@ Resources:
           Properties:
             Path: /
             Method: GET
-      CodeUri: s3://test-outputbucket-1rbsixz5gendo/master/test-pipeline.zip
+      CodeUri: s3://git-to-amazon-s3-outputbucket-vogsbj7fz7ko/master/test-pipeline.zip
