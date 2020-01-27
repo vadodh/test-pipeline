@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:
-  HelloWorldFunction:
+  HelloWorldFunction1:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
@@ -12,4 +12,4 @@ Resources:
           Properties:
             Path: /
             Method: GET
-      CodeUri: s3://git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct/master/test-pipeline.zip
+      CodeUri: s3://git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4/DEV/hello-world-example1.zip
