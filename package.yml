@@ -6,7 +6,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs12.x
-      Description: Code change 1
+      Description: Code change 22345
       Events:
         HelloWorldApi:
           Type: Api
