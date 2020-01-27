@@ -1,11 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Parameters:
-  LambdaSourceBucketKey:
-    Description: AWS S3 Bucket in the Region which contains the Lambda Functions
-    Type: String
-    Default: ''
-    ConstraintDescription: Must be a valid bucket name containing Lambda functions, and in the same region.
 Resources:
   HelloWorldFunction1:
     Type: AWS::Serverless::Function
@@ -18,4 +12,4 @@ Resources:
           Properties:
             Path: /
             Method: GET
-      CodeUri: s3://git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4/master/${LambdaSourceBucketKey}
+      CodeUri: s3://git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4/master/test-pipeline.zip
