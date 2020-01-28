@@ -6,7 +6,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs12.x
-      Description: template to create lambda
+      Description: template to create lambda.
       Events:
         HelloWorldApi:
           Type: Api
