@@ -1,5 +1,11 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
+Parameters:
+  LambdaSourceBucket:
+    Description: AWS S3 Bucket in the Region which contains the Lambda Functions
+    Type: String
+    Default: ''
+    ConstraintDescription: Must be a valid bucket name containing Lambda functions, and in the same region.
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
