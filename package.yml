@@ -12,11 +12,4 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs12.x
-      Description: template to create lambda.
-      Events:
-        HelloWorldApi:
-          Type: Api
-          Properties:
-            Path: /
-            Method: GET
       CodeUri: s3://git-to-amazon-s3-test-stack-outputbucket-1sj41gb4c8ct4/master/test-pipeline.zip
