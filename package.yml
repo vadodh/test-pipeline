@@ -6,7 +6,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs12.x
-      CodeUri: s3://git-to-amazon-s3-test-02-outputbucket-chtp7d0fglqc/master/test-pipeline.zip
+      CodeUri: s3://git-to-amazon-s3-outputbucket-o2zxmem5qlpa/master/test-pipeline.zip
   MyLambdaFunctionOne:
     Type: AWS::Serverless::Function
     Properties:
