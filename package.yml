@@ -1,21 +1,21 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Resources:
-  HelloWorldFunction:
+  HelloWorldLambdaFunction:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
       Runtime: nodejs12.x
-      CodeUri: s3://git-to-amazon-s3-outputbucket-o2zxmem5qlpa/master/test-pipeline.zip
+      CodeUri: s3://test-varun-stack-outputbucket-9aqdt5yz4202/master/test-pipeline.zip
   MyLambdaFunctionOne:
     Type: AWS::Serverless::Function
     Properties:
       Handler: my_lambda01.lambda_handler
       Runtime: python3.7
-      CodeUri: s3://git-to-amazon-s3-outputbucket-o2zxmem5qlpa/master/test-pipeline.zip
+      CodeUri: s3://test-varun-stack-outputbucket-9aqdt5yz4202/master/test-pipeline.zip
   MyLambdaFunctionTwo:
     Type: AWS::Serverless::Function
     Properties:
       Handler: my_lambda02.lambda_handler
       Runtime: python3.7
-      CodeUri: s3://git-to-amazon-s3-outputbucket-o2zxmem5qlpa/master/test-pipeline.zip
+      CodeUri: s3://test-varun-stack-outputbucket-9aqdt5yz4202/master/test-pipeline.zip
